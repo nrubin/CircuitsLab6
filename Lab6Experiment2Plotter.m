@@ -4,9 +4,9 @@ close all;
 
 interval = 15;
 
-load('SinglenMOSCharaceristics.mat')
-load('SeriesnMOSCharacteristic.mat')
-load('ParallelnMOSCharacteristic.mat')
+load('SinglenMOSCharaceristics.mat');
+load('SeriesnMOSCharacteristic.mat');
+load('ParallelnMOSCharacteristic.mat');
 
 
 %%%Plot Individual Currents
