@@ -2,7 +2,7 @@
 clear; clf;
 close all;
 
-interval = 15;
+interval = 10;
 
 load('SinglenMOSCharaceristics.mat');
 load('SeriesnMOSCharacteristic.mat');
@@ -56,10 +56,10 @@ screen_size = get(0, 'ScreenSize');
 set(gcf, 'Position', [0 0 screen_size(3) screen_size(4) ] ); %set to scren size
 set(gcf,'PaperPositionMode','auto') %set paper pos for printing
 plot(Series_nMOS_Ohmic_GateVoltage(1:interval:end), series_single_ohmic(1:interval:end), 'r.','MarkerSize',15); hold on;
-plot(Series_nMOS_Sat_GateVoltage(1:interval:end), series_single_sat(1:interval:end), 'ro','MarkerSize',15); hold on;
+plot(Series_nMOS_Sat_GateVoltage(1:interval:end), series_single_sat(1:interval:end), 'bo','MarkerSize',15); hold on;
 
 plot(Parallel_nMOS_Ohmic_GateVoltage(1:interval:end), paralell_single_ohmic(1:interval:end), 'b.','MarkerSize',15); hold on;
-plot(Parallel_nMOS_Sat_GateVoltage(1:interval:end), paralell_single_sat(1:interval:end), 'bo','MarkerSize',15); hold on;
+plot(Parallel_nMOS_Sat_GateVoltage(1:interval:end), paralell_single_sat(1:interval:end), 'ro','MarkerSize',15); hold on;
 
 %%%Set Plot Labels and legends for Figure 2
 ylim([-1,3]);
