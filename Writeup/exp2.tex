@@ -16,6 +16,15 @@ configurations in both the ohmic and saturation regions of operation, using $V_{
 
 By analyzing Figure \ref{fig:exp2currents}, we can see that the series, parallel and single curves appear to be offset by a linear distance in logspace, thus indicating that there is a linear factor between the relationships. 
 
+From the pre-lab, we know that two transistors in series with unit strength ratios act as a single \nMOS transistor with strength ratio $\frac{1}{2}$, and that two \nMOS transistors in parallel act as a single \nMOS transistor with strength ratio 2. The parallel case is relatively simple to prove, where $f(\dot)$ is a function that assumes an exponential form in weak inversion and a quadratic one in
+strong inversion. Allowing $I_1$ and $I_2$ to be the current through each parallel branch:
+$$ I = I_1 + I_2$$
+$$I_1 = I_{s1}(f(V_{GB}, V_{SB})-f(V_{GB}, V_{DB}))$$
+$$I_2 = I_{s2}(f(V_{GB}, V_{SB})-f(V_{GB}, V_{DB}))$$
+Assuming the two transistors are matched, $I_{s1} = I_{s2}$, and thus:
+$$ I = (I_{s1} + I_{s2})(f(V_{GB}, V_{SB})-(V_{GB}, V_{DB}))$$
+$$ I= 2I_1$$
+
 In order to find the true relationship, we explored the ratio of both the series and parallel combination of \nMOS transistors with the same \Vg, \Vd, \Vs and \Vb, plotting these ratios as a function of the gate voltage, \Vg, below in Figure \ref{fig:exp2ratios}. 
 In the strong inversion region, the ratio between both the series and parallel combinations to that of a single transistor is consistently, $0.5$ and $2$, respectively. That is to say, from our experimental data, a pair of series transistors sinks half the current as a single transistor, and a pair of transistors in parallel sinks twice the current of a single transistor, when matched.
 
